@@ -27,6 +27,8 @@ const Counter = () => {
             <button onClick={decrement}>➖ Decrease</button>
             <button onClick={reset}>🔃 Reset</button>
             <button onClick={into}>*️⃣ Into</button>
+            <h1>End</h1>
+            <h2>End</h2>
         </div>
     )
 }
