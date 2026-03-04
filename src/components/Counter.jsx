@@ -1,0 +1,34 @@
+import React from 'react'
+import { useState } from 'react'
+
+const Counter = () => {
+    const [count, setCount] = useState(0);
+
+    const increment = () => {
+        setCount(count + 1);
+    }
+
+    const decrement = () => {
+        setCount(count - 1);
+    }
+
+    const reset = () => {
+        setCount(0);
+    }
+
+    const into = () => {
+        setCount(count * 2);
+    }
+
+    return (
+        <div className='text-3xl text-center'>
+            <h1 >{count}</h1>
+            <button onClick={increment}>➕ Increase</button>
+            <button onClick={decrement}>➖ Decrease</button>
+            <button onClick={reset}>🔃 Reset</button>
+            <button onClick={into}>*️⃣ Into</button>
+        </div>
+    )
+}
+
+export default Counter
